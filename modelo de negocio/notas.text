@@ -1,0 +1,2 @@
+RUTA DE LOS COMPONENTES
+php artisan make:livewire admin\intranet\gestion_academica\planes\PlanesIndex

@@ -273,7 +273,16 @@ return [
             'route'  => 'cursos.index',
             'icon' => 'fas fa-fw fa-user',
         ],
-        
+        [
+            'text' => 'Ciclos',
+            'route'  => 'ciclos.index',
+            'icon' => 'fas fa-bars',
+        ],
+        [
+            'text' => 'Grupos',
+            'route'  => 'grupos.index',
+            'icon' => 'fas fa-sitemap',
+        ],
         [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',

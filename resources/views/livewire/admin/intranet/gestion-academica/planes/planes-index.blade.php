@@ -73,7 +73,7 @@
                     Codigo
                 </x-jet-label>
                 
-                <x-jet-input wire:model="createForm.codigo" required type="text" class="form-control uppercase focus:border-indigo-500" />
+                <x-jet-input wire:keydown.enter="save" wire:model="createForm.codigo" required type="text" class="form-control uppercase focus:border-indigo-500" />
 
                 <x-jet-input-error for="createForm.codigo" />
                  
@@ -105,7 +105,7 @@
                     Codigo
                 </x-jet-label>
                 
-                <x-jet-input wire:model="editForm.codigo" required type="text" class="form-control uppercase focus:border-indigo-500" />
+                <x-jet-input wire:keydown.enter="update" wire:model="editForm.codigo" required type="text" class="form-control uppercase focus:border-indigo-500" />
 
                 <x-jet-input-error for="editForm.codigo" />
                  

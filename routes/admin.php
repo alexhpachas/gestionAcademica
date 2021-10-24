@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Livewire\Admin\Intranet\GestionAcademica\Cursos\CursosIndex;
 use App\Http\Livewire\Admin\Intranet\GestionAcademica\Entidades\EntidadesIndex;
 use App\Http\Livewire\Admin\Intranet\GestionAcademica\Periodos\PeriodosIndex;
 use App\Http\Livewire\Admin\Intranet\GestionAcademica\Planes\PlanesIndex;
@@ -14,3 +15,5 @@ Route::get('entidades', [EntidadesIndex::class,'index'])->name('entidades.index'
 Route::get('planes', [PlanesIndex::class,'index'])->name('planes.index');
 
 Route::get('periodos', [PeriodosIndex::class,'index'])->name('periodos.index');
+
+Route::get('cursos', [CursosIndex::class,'index'])->name('cursos.index');

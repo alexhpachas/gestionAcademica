@@ -22,7 +22,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>3,
             'horas_practicas'=>2,
             'creditos'=>4,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO         
         ]);
 
         Curso::create([
@@ -31,7 +31,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>4,
             'horas_practicas'=>0,
             'creditos'=>4,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO         
         ]);
 
         Curso::create([
@@ -40,7 +40,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>2,
             'horas_practicas'=>2,
             'creditos'=>3,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO       
         ]);
 
         Curso::create([
@@ -49,7 +49,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>3,
             'horas_practicas'=>2,
             'creditos'=>4,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO           
         ]);
 
         Curso::create([
@@ -58,7 +58,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>2,
             'horas_practicas'=>2,
             'creditos'=>3,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO         
         ]);
 
         Curso::create([
@@ -67,7 +67,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>2,
             'horas_practicas'=>2,
             'creditos'=>3,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO     
         ]);
 
         //SEGUNCO CICLO ENFERMERIA
@@ -78,7 +78,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>3,
             'horas_practicas'=>2,
             'creditos'=>4,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO       
         ]);
 
         Curso::create([
@@ -87,7 +87,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>3,
             'horas_practicas'=>2,
             'creditos'=>4,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO        
         ]);
 
         Curso::create([
@@ -96,7 +96,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>2,
             'horas_practicas'=>2,
             'creditos'=>3,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO        
         ]);
 
         Curso::create([
@@ -105,7 +105,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>3,
             'horas_practicas'=>2,
             'creditos'=>4,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO        
         ]);
 
         Curso::create([
@@ -114,7 +114,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>2,
             'horas_practicas'=>2,
             'creditos'=>3,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO        
         ]);
 
         Curso::create([
@@ -123,7 +123,7 @@ class CursoSeeder extends Seeder
             'horas_teoricas'=>1,
             'horas_practicas'=>4,
             'creditos'=>3,
-            'tipo'=>'OBLIGATORIO'            
+            'tipo'=> Curso::OBLIGATORIO        
         ]);
     }
 }

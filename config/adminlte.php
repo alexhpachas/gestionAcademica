@@ -267,6 +267,12 @@ return [
             'route'  => 'periodos.index',
             'icon' => 'fas fa-fw fa-user',
         ],
+
+        [
+            'text' => 'Cursos',
+            'route'  => 'cursos.index',
+            'icon' => 'fas fa-fw fa-user',
+        ],
         
         [
             'text'    => 'multilevel',

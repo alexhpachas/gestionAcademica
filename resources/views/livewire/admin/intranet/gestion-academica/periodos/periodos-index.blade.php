@@ -7,7 +7,7 @@
         </div>
     </div>    
 
-    {{-- TABLA LISTA DE ENTIDADES --}}
+    {{-- TABLA LISTA DE PERIODOS --}}
     <x-tabla color="green">
         <x-slot name="head">
             <x-tabla-head class="w-32">Codigo</x-tabla-head>
@@ -16,26 +16,26 @@
         </x-slot>
                        
         <x-slot  name="body">
-            @if ($entidades->count())    
-                @foreach ($entidades as $entidade)                
+            @if ($periodos->count())    
+                @foreach ($periodos as $periodo)                
                     <tr class="hover:bg-blue-50 hover:text-blue-600 cursor-pointer border-gray-200 border-b uppercase">
                         <x-tabla-body>
-                            {{$entidade->id}}
+                            {{$periodo->id}}
                         </x-tabla-body>
 
                         <x-tabla-body>
-                            {{$entidade->nombre}}
+                            {{$periodo->nombre}}
                         </x-tabla-body>
 
                         <x-tabla-body>
                             <div class="flex">
-                                <div wire:click="edit('{{$entidade->id}}')">                                
+                                <div wire:click="edit('{{$periodo->id}}')">                                
                                     <x-btn-editar >
                                         
                                     </x-btn-editar>                
                                 </div>
                                                             
-                                <div wire:click="$emit('deleteEntidad',{{ $entidade->id }})">
+                                <div wire:click="$emit('deletePeriodo',{{ $periodo->id }})">
                                     <x-btn-eliminar />
                                 </div>
                             </div>
@@ -57,11 +57,11 @@
     </x-tabla>
           
 
-    {{-- MODAL PARA EDITAR ENTIDADES --}}
+    {{-- MODAL PARA EDITAR PERIODOS --}}
     <x-jet-dialog-modal wire:model="editForm.open" >
         <x-slot name="title">
             <div class="border-b-2 text-lg font-bold text-center text-gray-700">
-                EDITAR ENTIDAD
+                EDITAR PERIODO
             </div>
         </x-slot>
 
@@ -71,7 +71,7 @@
                     Nombre
                 </x-jet-label>
 
-                <x-jet-input wire:model="editForm.nombre" type="text" class="form-control uppercase" />
+                <x-jet-input wire:keydown.enter="update" wire:model="editForm.nombre" type="text" class="form-control uppercase" />
 
                 <x-jet-input-error for="editForm.nombre" />
             </div>
@@ -88,11 +88,11 @@
         </x-slot>
     </x-jet-dialog-modal>
 
-    {{-- MODAL PARA CREAR ENTIDADES --}}
+    {{-- MODAL PARA CREAR PERIODOS --}}
     <x-jet-dialog-modal wire:model="openCreate">
         <x-slot name="title">
             <div class="border-b-2 text-lg font-bold text-center text-gray-700">
-                CREAR ENTIDAD
+                CREAR PERIODO
             </div>
         </x-slot>
 
@@ -102,11 +102,12 @@
                     Nombre
                 </x-jet-label>
                 
-                <x-jet-input wire:model="createForm.nombre" required type="text" class="form-control uppercase focus:border-indigo-500" />
+                <x-jet-input wire:keydown.enter="save" wire:model="createForm.nombre" required type="text" class="form-control uppercase focus:border-indigo-500" />
 
                 <x-jet-input-error for="createForm.nombre" />
                  
             </div>
+            
         </x-slot>
 
         <x-slot name="footer">

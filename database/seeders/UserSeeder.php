@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
        
 
         Template::create([
-            'color_tabla' => 'blue'
+            'color_tabla' => '#EAEDED'
         ]);
     }
 }

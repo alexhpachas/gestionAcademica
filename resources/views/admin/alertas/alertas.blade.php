@@ -108,4 +108,44 @@
             }
         })
     })
+
+    Livewire.on('deletePeriodo', periodoId => {
+        Swal.fire({
+            title: 'Desea Eliminar el Periodo?',
+            text: "No podra recuperar el registro!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Si, Eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.emitTo('admin.intranet.gestion-academica.periodos.periodos-index', 'delete',
+                periodoId)
+            }
+        })
+    })
+
+    Livewire.on('deleteCurso', cursoId => {
+        Swal.fire({
+            title: 'Desea Eliminar el Curso?',
+            text: "No podra recuperar el registro!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Si, Eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.emitTo('admin.intranet.gestion-academica.cursos.cursos-index', 'delete',
+                cursoId)
+            }
+        })
+    })
+
+
+
+    
 </script>

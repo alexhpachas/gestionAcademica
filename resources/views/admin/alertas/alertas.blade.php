@@ -145,7 +145,41 @@
         })
     })
 
+    //CICLOS
+    Livewire.on('deleteCiclo', cicloId => {
+        Swal.fire({
+            title: 'Desea Eliminar el Ciclo?',
+            text: "No podra recuperar el registro!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Si, Eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.emitTo('admin.intranet.gestion-academica.ciclos.ciclos-index', 'delete',
+                    cicloId)
+            }
+        })
+    })
 
-
-    
+    //GRUPOS
+    Livewire.on('deleteGrupo', grupoId => {
+        Swal.fire({
+            title: 'Desea Eliminar el Grupo?',
+            text: "No podra recuperar el registro!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Si, Eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.emitTo('admin.intranet.gestion-academica.grupos.grupos-index', 'delete',
+                    grupoId)
+            }
+        })
+    })
 </script>

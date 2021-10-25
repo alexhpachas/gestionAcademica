@@ -18,7 +18,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'ENFERMERÍA',
             'codigo'=>'P01',
             'abreviatura'=>'ENF',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>1 //FACULTAD FCS
         ]);
 
@@ -26,7 +26,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'PSICOLOGÍA',
             'codigo'=>'P02',
             'abreviatura'=>'PSI',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>1 //FACULTAD FCS
         ]);
 
@@ -34,7 +34,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'OBSTETRICIA',
             'codigo'=>'P03',
             'abreviatura'=>'OBS',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>1 //FACULTAD FCS
         ]);
 
@@ -42,7 +42,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'ADMINISTRACIÓN Y FINANZAS',
             'codigo'=>'P04',
             'abreviatura'=>'ADF',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>2 //FACULTAD FICA
         ]);
 
@@ -50,7 +50,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'INGENIERÍA DE SISTEMAS',
             'codigo'=>'P05',
             'abreviatura'=>'SIS',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>2 //FACULTAD FICA
         ]);
 
@@ -58,7 +58,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'INGENIERÍA EN INDUSTRIAS ALIMENTARIAS',
             'codigo'=>'P06',
             'abreviatura'=>'IIA',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>2 //FACULTAD FICA
         ]);
 
@@ -66,7 +66,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'INGENIERÍA INDUSTRIAL',
             'codigo'=>'P07',
             'abreviatura'=>'IND',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>2 //FACULTAD FICA
         ]);
 
@@ -74,7 +74,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'CONTABILIDAD',
             'codigo'=>'P08',
             'abreviatura'=>'CONT',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>2 //FACULTAD FICA
         ]);
 
@@ -82,7 +82,7 @@ class ProgramaSeeder extends Seeder
             'nombre'=>'DERECHO',
             'codigo'=>'P09',
             'abreviatura'=>'DER',            
-            'estado'=>2,
+            'estado'=>1,
             'facultade_id'=>2 //FACULTAD FICA
         ]);
     }

@@ -182,4 +182,38 @@
             }
         })
     })
+
+    Livewire.on('deleteFacultade', facultadeId => {
+        Swal.fire({
+            title: 'Desea Eliminar la Facultad?',
+            text: "No podra recuperar el registro!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Si, Eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.emitTo('admin.intranet.gestion-academica.facultades.facultades-index', 'delete',facultadeId)
+            }
+        })
+    })
+
+    Livewire.on('deletePrograma', programaId => {
+        Swal.fire({
+            title: 'Desea Eliminar el Programa?',
+            text: "No podra recuperar el registro!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Si, Eliminar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.emitTo('admin.intranet.gestion-academica.programas.programas-index', 'delete',programaId)
+            }
+        })
+    })
 </script>

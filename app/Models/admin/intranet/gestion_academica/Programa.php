@@ -13,7 +13,7 @@ class Programa extends Model
 
     protected $fillable = ['nombre','codigo','abreviatura','estado','facultade_id'];
 
-    public function facultad(){
+    public function facultade(){
         return $this->belongsTo(Facultade::class);
     }
 

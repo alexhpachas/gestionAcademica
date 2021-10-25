@@ -18,7 +18,7 @@ class FacultadeSeeder extends Seeder
             'nombre'=>'CIENCIAS DE LA SALUD',
             'codigo'=>'F01',
             'abreviatura'=>'FCS',
-            'estado'=>2,
+            'estado'=>1,
             'entidade_id'=>1
             
         ]);
@@ -27,7 +27,7 @@ class FacultadeSeeder extends Seeder
             'nombre'=>'INGENIERÍA, CIENCIAS Y ADMINISTRACIÓN',
             'codigo'=>'F02',
             'abreviatura'=>'FICA',
-            'estado'=>2,
+            'estado'=>1,
             'entidade_id'=>1
             
         ]);

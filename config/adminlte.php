@@ -284,6 +284,16 @@ return [
             'icon' => 'fas fa-sitemap',
         ],
         [
+            'text' => 'Facultades',
+            'route'  => 'facultades.index',
+            'icon' => 'fas fa-sitemap',
+        ],
+        [
+            'text' => 'Programas',
+            'route'  => 'programas.index',
+            'icon' => 'fas fa-sitemap',
+        ],
+        [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [

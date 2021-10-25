@@ -11,10 +11,10 @@ class Facultade extends Model
     const ACTIVO = 1;
     const INACTIVO = 2;
 
-    protected $fillable = ['nombre','codigo','abreviatura','estado'];
+    protected $fillable = ['nombre','codigo','abreviatura','entidade_id','estado'];
 
     /* RELACION UNO A MUCHOS */
-    public function entidad(){
+    public function entidade(){
         return $this->belongsTo(Entidade::class);
     }
 

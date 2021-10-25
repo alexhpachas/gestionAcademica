@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', [HomeController::class,'index'])->name('admin.home');
+
 
 Route::get('personas', [PersonasIndex::class,'index'])->name('personas.index');
 

@@ -293,6 +293,12 @@ return [
             'route'  => 'programas.index',
             'icon' => 'fas fa-sitemap',
         ],
+        ['header' => 'GESTION USUARIOS'],
+        [
+            'text' => 'Personas',
+            'route'  => 'personas.index',
+            'icon' => 'fas fa-sitemap',
+        ],
         [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',

@@ -11,7 +11,7 @@ class Persona extends Model
     const ACTIVO = 1;
     const INACTIVO = 2;
     
-    protected $fillable = ['nombre','apellidos','dni','fecha_nacimiento','email','genero','estado'];
+    protected $guarded = ['created_at','updated_at', 'open'];
 
     public function docente(){
         return $this->hasOne(Docente::class);

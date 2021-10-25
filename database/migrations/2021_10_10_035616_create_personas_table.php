@@ -16,13 +16,15 @@ class CreatePersonasTable extends Migration
     {
         Schema::create('personas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('apellidos');
-            $table->char('dni');
-            $table->date('fecha_nacimiento');
+            $table->string('lastname_paternal');
+            $table->string('lastname_maternal');
+            $table->string('firstname');
+            $table->enum('document_type', ['DNI', 'PAS', 'CE', 'CI']);
+            $table->char('document_number');
+            $table->date('birthdate');
             $table->string('email');
-            $table->string('genero');
-            $table->enum('estado',[Persona::ACTIVO,Persona::INACTIVO])->default(Persona::ACTIVO);
+            $table->string('gender');
+            $table->enum('status',[Persona::ACTIVO,Persona::INACTIVO])->default(Persona::ACTIVO);
             $table->timestamps();
         });
     }
